@@ -1,0 +1,123 @@
+<html>
+    <body onload="reload_data()" onresize="resize_data()">
+        <script type="text/javascript">
+        document.write("<hr>");
+        document.write("Hello World from javascript!");
+        document.write("<hr>");
+        console.log("Hello");
+        username="KJSCE";
+        console.log(username);
+        console.log(typeof(username));
+        console.log(typeof username);
+        userage=20;
+        num2=35;
+        console.log(num2+userage)
+        console.log(num2%userage);
+        console.log(typeof userage);
+        console.log(typeof document);
+        num1="30";
+        answer=num1*num2
+        result1="Product of "+num1+" and "+num2+" is "+answer
+        console.log(result1)
+        result2=`Product of ${num1} and ${num2} is ${answer}`;
+        console.log(result2)
+        if(num1>num2)
+        {
+            console.log("Yes, It is true");
+        }
+        else
+        console.log("NO, It isn't true");
+        console.log(num1);
+        console.log(typeof num1);
+        if(num1===30){
+            console.log("Yes, It is true");
+        }
+        else
+        console.log("NO, It isn't true");
+        if(num1==="30"){
+            console.log("Yes, It is true");
+        }else
+        console.log("NO, It isn't true");
+        name=["Jill","Jack"];
+        console.log(name);
+        name= new Array("Josh","JJ");
+        console.log(name);
+        console.log(typeof name);
+        name=["Jack","Jill","Josh","John"];
+        start=0;
+        last=name.length-1;
+        for(i=start;i<=last;i++){
+            console.log(i,name[i]);
+        }
+        numbers=[85,100,12,67,30];
+        let largest = numbers[0];
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+        }
+        console.log(largest);
+        dob=["10","24","2004"];
+
+        function myfunc(){
+            a=100;
+            b=200;
+            console.log(a+b);
+        }
+        myfunc();
+        myfunc();
+        myfunc();
+        myvar=function(){//anonymous function
+            a=100;
+            b=200;
+            console.log(a+b);
+        }
+        console.log(myvar);
+        console.log(typeof myvar);
+        myvar();
+        calc=()=>{
+            i=100;
+            j=300;
+            console.log(i+j);
+        }
+        console.log(calc);
+        console.log(typeof calc);
+        calc();
+        </script>
+        <button onclick="myfunc()">Enter</button>
+        <script>
+            function myfunc(){
+                console.log("answer 1");
+            }
+            myfunc=function (){
+                console.log("answer 2");
+            }
+            myfunc=()=>{
+                console.log("answer 3");
+            }
+        </script>
+        <p~style="borde:solid" onmouseover="calc1()" onmouseout="calc2()">TEST</p>
+        <script>
+            function calc1(){
+                console.log("Mouse over example");
+            }
+            calc2=()=>{
+                console.log("Mouseout");
+            }
+        </script>
+        <input type="text" onkeyup="rec_value()">
+        <script>
+            function rec_value(){
+                console.log("Key up event called.")
+            }
+        </script>
+        <script>
+            function reload_data(){
+                console.log("Onload event called")
+            }
+            function resize_data(){
+                console.log("Onresize event called")
+            }
+        </script>
+    </body>
+</html>
